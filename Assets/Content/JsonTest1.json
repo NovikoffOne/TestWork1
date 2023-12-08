@@ -19,7 +19,7 @@
         "correct": false
       }
     ],
-    "background": "backgrounds/russia.jpg"
+    "background": "Assets/Resources/q1.png"
   },
   {
     "question": "Какой металл самый тяжелый?",
@@ -41,6 +41,6 @@
         "correct": true
       }
     ],
-    "background": "backgrounds/osmium.jpg"
+    "background": "Assets/Resources/q2.png"
   }
 ]

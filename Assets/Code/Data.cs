@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-
-[Serializable]
-public class Rootobject
-{
-    public Data[] Property;
-}
 
 [Serializable]
 public class Data
 {
-    public string question ;
+    public string question;
     public Answer[] answers;
     public string background;
 }
@@ -18,6 +11,6 @@ public class Data
 [Serializable]
 public class Answer
 {
-    public string text ;
-    public bool correct ;
+    public string text;
+    public bool correct;
 }
