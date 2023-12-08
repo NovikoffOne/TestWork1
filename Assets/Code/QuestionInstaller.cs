@@ -16,7 +16,7 @@ public class QuestionInstaller : MonoBehaviour
 
     private void Awake()
     {
-        //_data = new JsonFormatter().GetFormatData();
+        _data = new JsonFormatter().GetFormatData();
     }
 
     private void Start()
