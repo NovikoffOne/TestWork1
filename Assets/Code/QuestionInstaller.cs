@@ -11,18 +11,16 @@ public class QuestionInstaller : MonoBehaviour
     
     [SerializeField] Sprite _background;
 
-    private Data _data;
+    private Data[] _data;
     private int _index;
 
     private void Awake()
     {
-        _data = new JsonFormatter().GetFormatData();
+        //_data = new JsonFormatter().GetFormatData();
     }
 
     private void Start()
     {
         //_question.text = _data[0].question;
-
-        
     }
 }

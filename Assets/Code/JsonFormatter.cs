@@ -8,17 +8,17 @@ namespace Assets.Code
 {
     public class JsonFormatter : IDisposable
     {
-        public Data GetFormatData(string path = "Assets/Content/JsonTest1.json")
+        public Data[] GetFormatData(string path = "Assets/Content/JsonTest1.json")
         {
             var jsonString = File.ReadAllText(path);
 
-            Debug.Log(jsonString);
+            var data = FromJson<Rootobject>(jsonString);
 
-            Data data = FromJson<Data>(jsonString);
+            Debug.Log(data.Property[0].question);
 
             Dispose();
 
-            return data;
+            return data.Property;
         }
 
         public void Dispose()
