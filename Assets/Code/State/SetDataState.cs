@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Code
 {
@@ -23,7 +25,11 @@ namespace Assets.Code
                 }
             }
 
-            panel.Background.sprite = AssetBundle.LoadAsset<Sprite>(Target.Data[Target.QuestionIndex].background);
+            var tempTexture = Resources.Load<Texture2D>("q2.png");
+
+            Debug.Log(tempTexture);
+
+            panel.Background.sprite = Sprite.Create(tempTexture, new Rect(), new Vector2(0.5f, 0.5f));
 
             Target.StateMachine.ChangeState<ShowQuestionState>(state => state.Target = Target);
         }

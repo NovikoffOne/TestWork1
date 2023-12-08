@@ -19,7 +19,7 @@
         "correct": false
       }
     ],
-    "background": "Assets/Resources/q1.png"
+    "background": "q1.png"
   },
   {
     "question": "Какой металл самый тяжелый?",
